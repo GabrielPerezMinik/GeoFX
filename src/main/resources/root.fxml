@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="rootPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TabPane side="BOTTOM" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="locationTab" text="Location" />
+          <Tab fx:id="connectionTab" text="Connection" />
+            <Tab fx:id="SecurityTab" text="Security" />
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@../../../../../Wifi-icon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="ipText" />
+            <Button fx:id="enviarButton" mnemonicParsing="false" onAction="#onCheckIpAction" text="Check IP" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
