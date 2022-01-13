@@ -20,14 +20,14 @@
       </TabPane>
    </center>
    <top>
-      <HBox BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
          <children>
             <ImageView>
                <image>
-                  <Image url="@../../../../../Wifi-icon.png" />
+                  <Image url="@ImagenesIcons/Wifi-icon.png" />
                </image>
             </ImageView>
-            <TextField fx:id="ipText" />
+            <TextField fx:id="ipText" alignment="CENTER" />
             <Button fx:id="enviarButton" mnemonicParsing="false" onAction="#onCheckIpAction" text="Check IP" />
          </children>
       </HBox>

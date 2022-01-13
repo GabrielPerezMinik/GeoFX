@@ -21,8 +21,8 @@ public class IpifyService extends ApiClient<IpifyInterface> {
 		
 	}
 	
-	public String getIp() throws IOException {
-		Response<String>reponseRoot=getService().getIp().execute();
+	public IpifyJson getIpifyjson() throws IOException {
+		Response<IpifyJson>reponseRoot=getService().getIp("json").execute();
 		return reponseRoot.body();
 		
 	}

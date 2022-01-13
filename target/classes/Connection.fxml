@@ -26,7 +26,7 @@
          <children>
             <ImageView>
                <image>
-                  <Image url="@../../../../../Globe-icon.png" />
+                  <Image url="@ImagenesIcons/Globe-icon.png" />
                </image>
             </ImageView>
             <Label text="REGISTERED ISP:">

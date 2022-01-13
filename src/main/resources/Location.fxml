@@ -35,7 +35,7 @@
       </VBox>
       <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
          <children>
-            <ImageView fx:id="banderaImageView" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="banderaImageView" fitHeight="32.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
             <Label text="IP Location:" />
             <Label fx:id="ipLocationLabel" text="Buscando tu País..." />
          </children>

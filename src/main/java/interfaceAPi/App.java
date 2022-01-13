@@ -4,7 +4,6 @@ package interfaceAPi;
 import interfaceAPi.UI.RootController;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class App extends Application{
@@ -15,14 +14,13 @@ private static Stage primaryStage;
 	
 	public void start(Stage primaryStage) throws Exception {
 		
-		App.primaryStage = primaryStage;
+		App.setPrimaryStage(primaryStage);
 
 		mainController = new RootController();
 		
 		Scene scene = new Scene(mainController.getView());
 		
-		primaryStage.setTitle("Acceso a Ficheros");
-		//primaryStage.getIcons().add(new Image("/images/fx-64x64.png"));
+		primaryStage.setTitle("GeoFX");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
@@ -34,6 +32,20 @@ private static Stage primaryStage;
 	public static void main(String[] args) {
 		launch(args);
 
+	}
+
+
+
+
+	public static Stage getPrimaryStage() {
+		return primaryStage;
+	}
+
+
+
+
+	public static void setPrimaryStage(Stage primaryStage) {
+		App.primaryStage = primaryStage;
 	}
 
 }

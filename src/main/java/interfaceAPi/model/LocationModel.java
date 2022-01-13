@@ -1,7 +1,11 @@
-package interfaceAPi;
+package interfaceAPi.model;
 
+
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.scene.image.Image;
 
 public class LocationModel {
 
@@ -15,6 +19,9 @@ public class LocationModel {
 	StringProperty moneda=new SimpleStringProperty();
 	StringProperty tiempo=new SimpleStringProperty();
 	StringProperty zipPostal=new SimpleStringProperty();
+	ObjectProperty<Image> imagen=new SimpleObjectProperty<Image>();
+	
+	
 	public final StringProperty ciudadProperty() {
 		return this.ciudad;
 	}
@@ -135,5 +142,18 @@ public class LocationModel {
 		this.zipPostalProperty().set(zipPostal);
 	}
 	
+	public final ObjectProperty<Image> imagenProperty() {
+		return this.imagen;
+	}
+	
+
+	public final Image getImagen() {
+		return this.imagenProperty().get();
+	}
+	
+
+	public final void setImagen(final Image imagen) {
+		this.imagenProperty().set(imagen);
+	}	
 	
 }
